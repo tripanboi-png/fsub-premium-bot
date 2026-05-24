@@ -1,0 +1,46 @@
+{
+  "name": "Telegram Force Subscribe Bot",
+  "description": "Premium Telegram bot with force subscribe, file protection, and full admin panel",
+  "repository": "https://github.com/yourrepo/fsub-bot",
+  "keywords": ["telegram", "bot", "node"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token dari @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Telegram User ID owner bot",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Username bot tanpa @",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Nama/branding bot",
+      "value": "BITCH HUB"
+    },
+    "LOG_LEVEL": {
+      "description": "Log level: error | warn | info | debug",
+      "value": "info"
+    },
+    "NODE_ENV": {
+      "value": "production"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

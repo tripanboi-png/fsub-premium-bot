@@ -1,0 +1,29 @@
+{
+  "name": "telegram-fsub-bot",
+  "version": "1.0.0",
+  "description": "Premium Telegram Force Subscribe Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "mongoose": "^8.4.0",
+    "dotenv": "^16.4.5",
+    "winston": "^3.13.0",
+    "node-cron": "^3.0.3",
+    "axios": "^1.7.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "keywords": ["telegram", "bot", "force-subscribe"],
+  "author": "Admin",
+  "license": "MIT"
+}
